@@ -1,5 +1,7 @@
 ---
-
+import "../styles/global.css";
+import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 ---
 
 <html lang="en">
@@ -9,9 +11,68 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>ColumbVM FAQ</title>
+        
+		
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-[#212529] w-full">
+		<div class="w-full max-w-6xl h-10 mx-auto my-5 py-5 flex items-center justify-center pt-10">
+			<h1 class="text-white font-semibold text-4xl text-center">Rules</h1>
+			<div class="absolute left-4">
+				<Button variant="link" className="font-mono text-white text-2xl items-center mx-auto hover:text-green-600 duration-300 "><a href="https://columbvm.altex.page/">Back</a></Button>
+		    </div>
+		</div>
+
+		<div class="max-w-2xl flex flex-wrap mx-auto justify-center">
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">No overused malware</p>
+				<p class="font-mono text-lg text-white px-3">We allow malware to be run on our VMs, but do not run overused malware. Overused malware such as MEMZ and NoEscape. If you think your program could be considered "overused", then just don't run it.</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">No Vegas Pro</p>
+				<p class="font-mono text-lg text-white px-3">It's quite annoying as most of the users who uses this are quite selfish and makes it so other users can't do other stuff with the vm's. It also becomes repetitive after some time.</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">No Remote Administration Tools</p>
+				<p class="font-mono text-lg text-white px-3">Do not use any sort of programs such as TeamViewer or AnyDesk to bypass the queue systems.</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">Don't break the law</p>
+				<p class="font-mono text-lg text-white px-3">Our servers are based in the <a class="hover:text-green-600 duration-300" href="https://www.legislation.gov.uk/ukpga/1990/18/contents">United Kingdom</a>. So we request to not use our virtual machines for any sort of illegal content. This includes but not limited to: Attempting to run DoS/DDoS tools, distribute spam, etc...</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">Don't bypas ColumbNet and no NSFW content</p>
+				<p class="font-mono text-lg text-white px-3">We want to keep our vm's as safe as possible, so we made it so most NSFW sites get blocked. Don't even try bypassing it, because you will just get permanent banned.</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">Do not perform repetitive destructive actions</p>
+				<p class="font-mono text-lg text-white px-3">You're just going to annoy others to the point where you're just gonna get permanent banned. Wouldn't be nice for anyone really.</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">No Crypto Mining</p>
+				<p class="font-mono text-lg text-white px-3">You're not earning any money anyways. Why even try?</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">Do not impersonate other users</p>
+				<p class="font-mono text-lg text-white px-3">If you're caught you're most likely going to be permanent banned. It's honestly just sad if you even try.</p>
+			</Card>
+			<Card className="bg-[#212529] border-1 border-gray-600 rounded-md w-130 justify-center my-5 hover:border-white duration-300">
+				<p class="font-semibold text-3xl text-white px-3">Final Decision Authority</p>
+				<p class="font-mono text-lg text-white px-3">In any dispute or argument, the highest-ranking staff member present has the final say and their decision is binding.</p>
+			</Card>
+
+		</div>
+		<hr class="mx-auto my-5 justify-between flex border-1 border-gray-600"></hr>
+
+		<div class="h-10 justify-between flex mx-auto items-center">
+			<p class="font-mono text-white text-xs px-3">ColumbVM - 2026 | This page is made by <a href="https://www.neils1108.eu" class="hover:text-green-600 duration-300">neils1108</a></p>
+			<div class="items-center">
+				<Button variant="link" className="font-mono text-xs text-white px-3"><a href="https://columbvm.altex.page/">ColumbVM</a></Button>
+				<Button variant="link" className="font-mono text-xs text-white px-3"><a href="https://discord.com/invite/af5BN8Jyv8">ColumbVM Discord</a></Button>
+				<Button variant="link" className="font-mono text-xs text-white px-3"><a href="">ColumbVM FAQ</a></Button>
+			</div>
+		</div>
 	</body>
 </html>
+
+
